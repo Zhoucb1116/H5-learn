@@ -1,0 +1,43 @@
+table{
+    margin:0 auto;
+    border: 3px #bacfe0 dashed;
+}
+th,td,input{
+    border: none;
+}
+th{
+    color: black;
+}
+a{
+    text-decoration: none;
+    color: blue;
+}
+ul{
+    margin: 0 -50px;
+}
+ul li{
+    list-style: none;
+    text-align: left;
+}
+.center{
+text-align: center;
+}
+select{
+    width: 150px;
+    height: 25px;
+}
+.hobby{
+    display: inline-block;
+}
+textarea{
+    outline: none;
+}
+
+.zuo:hover{
+    background-color: green;
+    color: #fff;
+}
+.you:hover{
+    background-color: red;
+    color: #fff;
+}

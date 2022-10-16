@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>信息统计表</title>
+    <link rel="stylesheet" href="baogao.css" type="text/css">
+</head>
+
+<body>
+    <form method="post">
+        <table>
+            <tr>
+                <th>信息注册表</th>
+            </tr>
+            <tr>
+                <td class="center">姓名：</td>
+                <td>
+                    <input type="text" class="name" name="userName" autofocus="autofocus" placeholder="请输入您的姓名">
+                </td>
+            </tr>
+            <tr>
+                <td class="center">年龄：</td>
+                <td>
+                    <input type="text" class="age" name="userAge" placeholder="请输入您的年龄">
+                </td>
+            </tr>
+            <tr>
+                <td class="center">性别：</td>
+                <td>
+                    <input type="radio" class="sextyle" name="userSex" id="sexman" value="man" checked>
+                    <label for="man">
+                        <img src="../images/man.jpg" alt="">男士
+                    </label>
+                    <input type="radio" class="sextyle" name="userSex" id="sexwomen" value="women">
+                    <label for="women">
+                        <img src="../images/women.jpg" alt="">女士
+                    </label>
+                </td>
+            </tr>
+            <tr>
+                <td class="center">出生日期：</td>
+                <td>
+                    <select name="year">
+                        <option>--请选择年份：--</option>
+                        <option>year</option>
+                        <option>year</option>
+                        <option>year</option>
+                    </select>
+                    <select name="month">
+                        <option>--请选择月份：--</option>
+                        <option>month</option>
+                        <option>month</option>
+                        <option>month</option>
+                    </select>
+                    <select name="day">
+                        <option>--请选择日期：--</option>
+                        <option>day</option>
+                        <option>day</option>
+                        <option>day</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td class="center">爱好：</td>
+                <td>
+                    <ul>
+                        <li class="hobby">
+                            <input type="checkbox" value="reading">阅读
+                        </li>
+                        <li class="hobby">
+                            <input type="checkbox" value="running">跑步
+                        </li>
+                        <li class="hobby">
+                            <input type="checkbox" value="swimming">游泳
+                        </li>
+                        <li class="hobby">
+                            <input type="checkbox" value="fitness">健身
+                        </li>
+                        <li class="hobby">
+                            <input type="checkbox" value="basketball">篮球
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td class="center">学历：</td>
+                <td>
+                    <select name="record">
+                        <option>请选择学历</option>
+                        <option>高中</option>
+                        <option>专科</option>
+                        <option>本科</option>
+                        <option>本科以上</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td class="center">个人介绍：</td>
+            </tr>
+            <tr>
+                <td colspan="2" style="text-align: left">
+                    <textarea name="neirong" cols="30" rows="10" placeholder="请输入个人介绍。。。。"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" style="font-size: 10px;">
+                    <input type="checkbox">我同意此信息录入
+                    <a href="#" style="cursor: help;">《信息管理条例》</a>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <input type="submit" class="zuo" value="立即注册">
+                    <input type="reset" class="you" value="重新输入">
+                </td>
+            </tr>
+        </table>
+</body>
+
+</html>
