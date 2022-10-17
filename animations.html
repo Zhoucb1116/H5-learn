@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation和Transition动画</title>
+</head>
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+    }
+
+    .animation {
+        width: 150px;
+        height: 150px;
+        background-color: red;
+        position: relative;
+        animation: myfirst 10s infinite alternate;
+        text-align: center;
+        line-height: 125px;
+        border-radius: 15%;
+    }
+
+    @keyframes myfirst {
+        0% {
+            background-color: red;
+            left: 0px;
+            top: 0px
+        }
+
+        25% {
+            background-color: yellow;
+            left: 200px;
+            top: 0px;
+        }
+
+        50% {
+            background-color: green;
+            left: 200px;
+            top: 200px;
+            transform: rotate(-180deg);
+        }
+
+        75% {
+            background-color: purple;
+            left: 0px;
+            top: 200px;
+        }
+
+        100% {
+            background-color: red;
+            left: 0px;
+            top: 0px;
+        }
+    }
+
+    .transition {
+        margin: 200px auto;
+        width: 300px;
+        height: 300px;
+    }
+
+    .student,
+    .visitor {
+        margin: 50px;
+        position: relative;
+        width: 45px;
+        height: 45px;
+        transition: padding 0.5s linear;
+        overflow: hidden;
+        border-radius: 10px;
+    }
+
+    .visitor {
+        background-color: #5AB5FB;
+    }
+
+    .student {
+        background-color: #D81E06;
+        margin-bottom: 20px;
+        vertical-align: middle;
+    }
+
+    .visitor img,
+    .student img {
+        width: 45px;
+
+        position: absolute;
+    }
+
+    .student:hover,
+    .visitor:hover {
+        padding-left: 265px;
+    }
+
+    .characters {
+        position: absolute;
+        top: -3px;
+        left: 50px;
+        line-height: 50px;
+        color: white;
+    }
+</style>
+
+<body>
+    <div class="animation">
+    </div>
+    <div class="transition">
+        <div class="visitor">
+            <a class="characters">访客 Visitor</a>
+            <img src="../images/我的.png" alt="">
+        </div>
+        <div class="student">
+            <a class="characters">学生 Student</a>
+            <img src="../images/用户反馈.png" alt="">
+        </div>
+    </div>
+</body>
+
+</html>
