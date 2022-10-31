@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .body {
+            width: 450px;
+            height: 450px;
+            text-align: center;
+            background-color: rgb(237, 71, 118);
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .body>div {
+            width: 150px;
+            height: 150px;
+            border: 2px solid;
+            background-color: rgb(182, 220, 236);
+        }
+
+        input {
+            margin-top: 20px;
+            width: 440px;
+            height: 40px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="body">
+        <div onmouseover="over()">鼠标进入时
+            <p id="over"></p>
+        </div>
+        <div onmouseout="out()">鼠标离开时:
+            <p id="out"></p>
+        </div>
+        <div onclick="myonclik()">鼠标单击时：
+            <p id="myonclik"></p>
+        </div>
+        <div ondblclick="dblclick()">鼠标双击时：
+            <p id="dblclick"></p>
+        </div>
+    </div>
+    <input type="text" onblur="change()">
+</body>
+<script>
+    function over() {
+        document.getElementById("over").innerHTML = "你获取了焦点!"
+    }
+
+    function out() {
+        document.getElementById("out").innerHTML = "你失去了焦点!"
+    }
+
+    function myonclik() {
+        document.getElementById("myonclik").innerHTML = "你鼠标单击了这里!"
+    }
+
+    function dblclick() {
+        document.getElementById("dblclick").innerHTML = "你鼠标双击了这里!"
+    }
+
+    function change() {
+        alert("发生甚么事了??")
+    }
+    // mouseleave事件
+    function leave() {
+        console.log('触发mouseleave事件！');
+    }
+</script>
+
+</html>
