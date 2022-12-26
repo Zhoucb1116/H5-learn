@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>copy</title>
+</head>
+
+<body>
+    请输入内容：
+    <input type="text" id="text_copy">
+    <hr>
+    <button onclick="myonclick()" style="width: 170px;">copy</button>
+    <hr>
+    粘贴内容：
+    <input type="text" id="text_v">
+    <script>
+        function myonclick() {
+            var text = document.getElementById("text_copy").value;
+            var text_cope = document.getElementById("text_v").value = text;
+        }
+    </script>
+</body>
+
+</html>
